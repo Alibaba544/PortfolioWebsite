@@ -1,0 +1,147 @@
+
+<html>
+
+    <title>Reece Brogden's Portfolio</title>
+    <style>
+        
+        .Header{
+            text-align:center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 2%;
+        }
+
+        .feedback{
+            position:fixed;
+            bottom:0;
+        }
+        .projects{
+            /*border: 1px black solid;*/
+            float:left;
+            height:fit-content;
+        }
+        #work{
+            margin-left:2%;
+            width: 30%;  
+        }
+        #personal{
+            margin-left:2%;
+            width: 30%;
+        }
+        .pProject{
+            border: 2px gray solid;
+        }
+        .school{
+            float:left;
+            width: 30%;
+            margin-left:2%;
+        }
+        .school > p{
+            border: 2px gray solid;
+        }
+        p{
+            text-align: left;
+        }
+
+    </style>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
+<body>
+    <!-- Header div -->
+    <div class="Header">
+        <h1> Reece Brogden's Portfolio </h1>
+    <!-- Work experience -->
+    <div class="projects" id="work">
+        <h3>Work Experience</h3>
+        <p class="pProject" id="ATS">
+            <b>Active Therapy Systems LLC (ATS)</b> May 2022 - Jan 2023
+            <br/>
+            At ATS I was responsible for creating code for multiple aspects of the both site and an android application.  
+            On the site I wrote PHP for generating PDF files based on data given to me through an API call. I also helped in 
+            creating a android application, I was responsible for making static helper classes and a graphing system that would map 
+            out a patients blood pressure over time. Finally, I performed quality checks on the site and application to report 
+            any major or minor bugs that may have appeared during development. 
+        </p>
+    </div>
+
+        <!-- Personal Projects -->
+    <div class="projects" id="personal">
+        <h3>Personal Projects</h3>
+        
+        <p class="pProject" id="ThisWebsite">
+            <b>This website:</b><br/>
+            This website is hosted on an Apache24 server located on my home computer. 
+            All HTML, PHP, and JavaScript/ECMAScript code running on this site has been developed by me. 
+            Additionally, I have implemented a tunneling system to bypass the need for a static IP address, 
+            which would typically be provided by my ISP
+        </p>
+        <p class="pProject" id="unity">
+            <b>Unity Projects:</b>
+            <br/>
+            I have undertaken various mini projects within Unity to explore the software's capabilities. Here are a few examples:
+            <br/>
+            <br/>
+            1. Developed a 2D game enabling players to navigate through a virtual museum showcasing NASA projects.
+            <br/>
+            2. Created an interactive walkthrough illustrating Supreme Court rulings on specific cases, providing insights into judges' opinions.
+            <br/>
+            3. Implemented simple AI behaviors within 2D environments to simulate enemy interactions against a player.
+            <br/>
+            4. Designed a basic battle arena game where the player combats endlessly spawning adversaries, testing combat mechanics and endurance.
+        </p>
+        <p class="pProject" id="UE4/5">
+            <b>Unreal Engine:</b>
+            <br/>
+            Within unreal engine I have created multiple small horror games with a group of 4 people. We created was a game with a simple objective of finding a key and escaping a monster 
+            in a large house. 
+            We made a game where the player wanders into an abandonded mine where the entrance then colapses 
+            behind them. The player must then make their way through the mine, avoiding any dangers that pop 
+            up as they travel further in. 
+            <br/>
+            I have also spent time testing out the possibilities the engine gives a developer on a small scale. 
+        </p>
+        <p class="pProject" id="birdbot">
+            <b>Discord Bot:</b>
+            <br/>
+            Using JavaScript I created a bot that I could use on my discord server to generate pictures from the internet 
+            based on a prompt given by any user. The bot could also act as a moderation tool by performing various administrator  
+            tasks at a significantly quicker pace if given a specific command.
+        </p>
+        <p class="pProject" id="blender">
+            <b>Blender:</b>
+            <br/>
+            I primarily use blender to create models for games and 3D printing, though have done some animation within the 
+            tool as well. 
+        </p>
+        <p class="pProject" id="Bingo">
+            <b>Bingo Game:</b><br/>
+            I have developed a simple automated Bingo system which adheres to the rules of traditional Bingo. It can be found here: 
+            <a href="Bingo.php" style="color:blue">Bingo.php</a>
+        </p>
+        <p class="pProject" id="Bingo">
+            <b>Weather API:</b><br/>
+            I created a JavaScript/ECMAScript based webpage
+            that allows users to retrieve weather data from 
+            an online API based on latitude and longitude coordinates,
+            along with their preferred units. Users can input these details, 
+            and the site will display the relevant information.
+            <a href="Weather.html" style="color:blue">Weather.html</a>
+        </p> 
+    </div>
+    <div class="school work" id="school">
+        <h3>School Work</h3>
+        <p>
+            <b>DBMS Project:</b><br/>
+            A group of students and I had to compile and 
+            manipulate an open source DBMS. We ended up 
+            using FirebirdDB with the goal of creating 
+            significantly faster query speeds on frequently used 
+            queries. This was done by using a wrapper that would 
+            moniter all used queries, and store the most common ones 
+            in a cache. The queries were removed based on a TTL, and 
+            eventually replaced. This showed significant gains in speed 
+            by roughly 30%.
+        </p>
+    </div>
+</body>
+</html>
